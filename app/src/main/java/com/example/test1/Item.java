@@ -1,19 +1,29 @@
 package com.example.test1;
 
-public class Item  {
-    // public static int ID=0;
-    //private int id;
+import java.io.Serializable;
+
+public class Item implements Serializable {
+    public static int ID=0;
+    private int id;
     String name;
     String price;
 
     public Item(String name, String price) {
-        //this.id=ID;
+        this.id=ID;
         this.name = name;
         this.price = price;
-        //Item.ID++;
+        Item.ID++;
     }
     public Item(){
 
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
