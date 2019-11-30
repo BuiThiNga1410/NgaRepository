@@ -13,8 +13,8 @@
         android:textSize="20dp"
         android:textColor="@color/colorPrimary"
         android:gravity="center"/>
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_bill"/>
+        android:id="@+id/lv_bill"/>
 </LinearLayout>

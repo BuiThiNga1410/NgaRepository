@@ -33,7 +33,7 @@ class MyDatabase extends SQLiteOpenHelper {
 
     }
 
-    public void addContact(Item item){
+    public void addItem(Item item){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("Name", item.getName());
