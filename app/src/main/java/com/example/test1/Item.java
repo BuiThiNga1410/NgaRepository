@@ -8,7 +8,7 @@ public class Item implements Serializable {
     String name;
     String price;
 
-    public Item(String name, String price) {
+    public Item(int ID,String name, String price) {
         this.id=ID;
         this.name = name;
         this.price = price;
